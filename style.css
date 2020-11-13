@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.desktop_wrap {
+    background: URL("images/background.jpg") center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.footer_wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #363636;
+}
+
+.create_wrap {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #363636;
+}
+
+.create_button {
+    border: 1px solid black;
+    border-radius: 0;
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+
+    transition: .1s ease-in;
+}
+
+.create_button:hover {
+    background-color: #363636;
+    border: transparent;
+    color: #fff;
+}
+
+.app_wrap {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    width: 70vw;
+}
+
+.app_top {
+    width: 100%;
+    height: 50px;
+    background-color: #363636;
+    position: relative;
+}
+
+.app_name {
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 32px;
+}
+
+.app_buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.app_button {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    transition: .1s ease-in;
+    cursor: pointer;
+    border: 1px solid #363636;
+    text-align: center;
+    font-size: 40px;
+}
+
+.app_button:hover {
+    border: 1px solid aqua;
+    background-color: #363636;
+    color: aqua;
+}
+
+.app_button > div{
+    background-color: black;
+    vertical-align: middle;
+}
+
+.app_button:hover > div{
+    background-color: aqua;
+}
+
+.app_button > div {
+    display: inline-block;
+}
+
+.hide_symbol {
+    width: 20px;
+    height: 3px;
+}
+
+.more_symbol {
+    width: 20px;
+    height: 20px;
+}
+
+.output_area {
+    outline: none;
+    width: 100%;
+    height: 200px;
+    font-size: 40px;
+    resize: none;
+    background-color: #fff;
+}
+
+.keyboard_wrap {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    margin-top: -5px;
+}
+
+.keyboard_line {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.keyboard_item {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #302f36;
+    cursor: pointer;
+    transition: .1s ease-in;
+    border: 1px solid transparent;
+    margin: 3px;
+}
+
+@media (max-width: 640px) {
+    .keyboard_item {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .keyboard_wrap {
+        height: 120px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .keyboard_item {
+        width: 100px;
+        height: 70px;
+        font-size: 45px;
+        padding: 0;
+    }
+
+}
+
+.keyboard_item:hover {
+    border: 1px solid #302f36;
+    background-color: #1f1c21;
+}
+
+.special {
+    background-color: #1f1c21;
+}
+
+.special:hover {
+    
+    border: 1px solid #1f1c21;
+    background-color: #302f36;
+}
+
+.backspace {
+    width: 100px;
+}
+
+.enter {
+    width: 100px;
+}
+
+.space {
+    width: 300px;
+}
+
+.shift_clicked {
+    background-color: rgba(180,180,180,.8);
+}
